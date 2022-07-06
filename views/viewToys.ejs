@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>ALL TOYS</h2>
+    <%= console.log("from view", data) %>
+    <% for(let i = 0;i < data.length;i++){%>
+        <div class = "toy">
+            <h3>name : <%= data[i].name %></h3>
+            <h3>cost : <%= data[i].cost %></h3>
+            <h3>toy : <%= data[i].unitsSold %></h3>
+            <a href=<%= "/editToy/" + data[i]._id%>>edit Toy</a>
+            <a href=<%= "/toy/delete/" + data[i]._id %>>delete Toy</a>
+        </div>
+    <%}%>
+</body>
+</html>

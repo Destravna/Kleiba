@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="toy">
+        <h3>name : <%= data.name %></h3>
+            <h3>cost : <%= data.cost %></h3>
+            <h3>toy : <%= data.unitsSold %></h3>
+            <a href=<%= "/editToy/" + data._id%>>edit Toy</a>
+            <a href=<%= "/toy/delete/" + data._id %>>delete Toy</a>
+    </div>
+    
+</body>
+</html>
